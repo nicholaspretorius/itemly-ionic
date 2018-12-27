@@ -1,0 +1,7 @@
+<form (submit)="addTodo($event)">
+    <ion-item>
+        <ion-label>What do you want to do?</ion-label>
+        <ion-input type="text" name="todo" placeholder="Add a new todo" [(ngModel)]="todo"></ion-input>
+    </ion-item>
+    <ion-button class="submit-btn" expand="block" type="submit">Add</ion-button>
+</form>

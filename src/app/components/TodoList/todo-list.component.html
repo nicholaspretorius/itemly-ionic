@@ -1,0 +1,4 @@
+<ion-list>
+    <TodoItem *ngFor="let todo of todos" [todo]="todo.text" [done]="todo.done" class="{{ showDone ? '' : 'hide-done' }}">
+    </TodoItem>
+</ion-list>

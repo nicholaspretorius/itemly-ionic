@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Itemly | Ionic
+    </ion-title>
+    <ion-buttons slot="end">
+      <!-- <button (click)="addTodo()"><ion-icon name="add" slot="icon-only"></ion-icon></button> -->
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <TodoList [todos]="todos" [showDone]="showDone"></TodoList>
+  <TodoInput (addTodoEvent)="onAddTodo($event)"></TodoInput>
+  <ShowDone (onToggleDoneEvent)="onToggleDone($event)"></ShowDone>
+</ion-content>
